@@ -10,5 +10,17 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)App.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\EntryPageAlpha.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataServices\TodoService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ToDoItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\EntryPageBravo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\AppDelegate.cs">
+      <DependentUpon>ToDoItem.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Models\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Views\" />
+    <Folder Include="$(MSBuildThisFileDirectory)DataServices\" />
   </ItemGroup>
 </Project>

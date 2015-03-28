@@ -9,20 +9,12 @@ namespace tdxplat
 {
 	public class App : Application
 	{
+		public static TodoService todoService = new TodoService();
+
 		public App ()
 		{
-			// The root page of your application
-			MainPage = new ContentPage {
-				Content = new StackLayout {
-					VerticalOptions = LayoutOptions.Center,
-					Children = {
-						new Label {
-							XAlign = TextAlignment.Center,
-							Text = "Welcome to Xamarin Forms!"
-						}
-					}
-				}
-			};
+			//MainPage = new EntryPageAlpha ();
+			MainPage = new EntryPageBravo ();
 		}
 
 		protected override void OnStart ()
